@@ -8,7 +8,7 @@
 
   <!--<link rel="stylesheet" href="reset.css">-->
   <!--<link rel="stylesheet" href="base.css">-->
-  <!--<link rel="stylesheet" href="style.css">-->
+  <link rel="stylesheet" href="style.css">
   <!--<script type="module" src="app.js"></script>-->
   <!--<script src="script.js" defer></script>-->
 
@@ -16,26 +16,232 @@
 </head>
 
 <body id="body">
-  <header></header>
-  
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="tooth logo">
+    </div>
+
+    <address>
+      <img src="icons/addresses.svg" alt="map pin">
+      <ul>
+        <li>м. Рівне, вул. Волинська, 24</li>
+        <li>м. Рівне, вул. Волинської Дивізії, 1</li>
+      </ul>
+    </address>
+
+    <div class="contact">
+      <a href="tel:+380986008834"></a>
+      <img src="icons/phone.svg" alt="mobile icon">
+
+      <div>
+        <h4>+38 098 60 08 834</h4>
+        <p>Зателефонуйте нам</p>
+      </div>
+      </a>
+    </div>
+
+    <ul class="social">
+      <li>
+        <a href="">
+          <img src="icons/fb.svg" alt="facebook logo">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="icons/instagram.svg" alt="instagram logo">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="icons/tg.svg" alt="telegram logo">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="icons/tik-tok.svg" alt="tik-tok logo">
+        </a>
+      </li>
+    </ul>
+  </header>
+
   <main>
-    <section class="hero"></section>
-    
-    <section class="features"></section>
-    
-    <section class="about"></section>
-    
-    <section class="services"></section>
-    
-    <section class="specialists"></section>
-    
-    <section class="gallery"></section>
-    
-    <section class="form"></section>
-    
+    <section class="hero">
+      <h1>
+        СТОМАТОЛОГІЯ<br>
+        <b>DR.SAVCHYN</b>
+      </h1>
+      <p>Для нас стоматологія – набагато більше ніж пломба чи імплант, ми змінюємо якість життя людей</p>
+      <div class="buttons">
+        <button>БІЛЬШЕ ПРО НАС</button>
+        <button>ЗАПИСАТИСЬ</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <h3>Ми робимо все, щоб якісна стоматологія була доступна кожному</h3>
+
+      <ul>
+        <li>
+          <img src="icons/personnel.png" alt="people">
+          <h4>Кваліфіковані спеціалісти</h4>
+        </li>
+        <li>
+          <img src="icons/features.png" alt="feature">
+          <h4>Широкий спектр послуг</h4>
+        </li>
+        <li>
+          <img src="icons/progress.png" alt="progress chart">
+          <h4>Сучасні технології</h4>
+        </li>
+        <li>
+          <img src="icons/promo.png" alt="promotion">
+          <h4>Акції та знижки</h4>
+        </li>
+        <li>
+          <img src="icons/place-pin.png" alt="map pin">
+          <h4>Зручне розташування</h4>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2>DR.SAVCHYN - ЦЕ?</h2>
+
+      <div class="content">
+        <div class="column">
+          <img src="images/about/about1.png" alt="doctors with client">
+          <p>Запрошуємо до нашої стоматологічної клініки, де ваше здоров'я та комфорт - наша головна мета.</p>
+          <p>Ми робимо все для того, щоб Ви частіше посміхались гарною та білосніжною посмішкою, адже це запорука щасливого та успішного майбутнього</p>
+          <img src="images/about/about2.png" alt="doctor with client">
+        </div>
+
+        <div class="column">
+          <p>Наша головна мета – створити здорову посмішку та зберегти здоров’я зубів наших пацієнтів, забезпечуючи індивідуальний підхід та вищі стандарти турботи про їх здоров’я.</p>
+          <p>Ми поєднуємо досвід і знання наших лікарів із використанням передових технологій та інноваційного обладнання, щоб забезпечити максимально комфортне та ефективне лікування наших пацієнтів.</p>
+          <img src="images/about/about3.png" alt="doctor with client">
+          <p>Наші фахівці є висококваліфікованими професіоналами з багаторічним досвідом і готові вирішити найскладніші стоматологічні проблеми.</p>
+          <p>Наша стоматологія прагне постійно вдосконалювати знання та навички наших спеціалістів, надавати новітні методи лікування та діагностики.</p>
+          <p>Ми пропонуємо широкий спектр послуг від профілактичних гігієнічних до хірургічних процедур.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>НАШІ ПОСЛУГИ</h2>
+
+      <ul>
+        <li>
+          <img src="images/services/aestetics.png" alt="happy client">
+          <h4>Естетична стоматологія</h4>
+        </li>
+        <li>
+          <img src="images/services/therapy.png" alt="doctor with patient">
+          <h4>Терапевтична стоматологія</h4>
+        </li>
+        <li>
+          <img src="images/services/kids.png" alt="kids doctor">
+          <h4>Дитяча стоматологія</h4>
+        </li>
+        <li>
+          <img src="images/services/ortoped.png" alt="doctor with client">
+          <h4>Ортопедичне лікування</h4>
+        </li>
+        <li>
+          <img src="images/services/implants.png" alt="doctors">
+          <h4>Імплантація зубів</h4>
+        </li>
+        <li>
+          <img src="images/services/surgery.png" alt="doctor with client">
+          <h4>Хірургія</h4>
+        </li>
+        <li>
+          <img src="images/services/hygiene.png" alt="doctor with client">
+          <h4>Професійна гігієна зубів</h4>
+        </li>
+        <li>
+          <img src="images/services/whitening.png" alt="client in a chair">
+          <h4>Професійне відбілювання</h4>
+        </li>
+      </ul>
+    </section>
+
+    <section class="specialists">
+      <h2>НАШІ СПЕЦІАЛІСТИ</h2>
+
+      <ul>
+        <li>
+          <h4>Головний лікар хірург-стоматолог</h4>
+          <img src="images/specialists/savchyn.png" alt="doctor Savchyn">
+          <h5>Савчин Віталій Ярославович</h5>
+        </li>
+        <li>
+          <h4>Стоматолог - ортопед</h4>
+          <img src="images/specialists/grytsuk.png" alt="doctor Grytsuk">
+          <h5>Грицюк Яна Олександрівна</h5>
+        </li>
+        <li>
+          <h4>Дитячий стоматолог</h4>
+          <img src="images/specialists/romanuk.png" alt="doctor Romanuk">
+          <h5>Романюк Тетяна Сергіївна</h5>
+        </li>
+        <li>
+          <h4>Асистент головного лікаря стоматолога</h4>
+          <img src="images/specialists/berejna.png" alt="doctor Berezhna">
+          <h5>Бережна Леся</h5>
+        </li>
+      </ul>
+
+      <button>ВСІ СПЕЦІАЛІСТИ</button>
+    </section>
+
+    <section class="gallery">
+      <h2>ФОТОГАЛЕРЕЯ</h2>
+
+      <ul>
+        <li>
+          <img src="images/gallery/gallery1.png" alt="doctor with client">
+        </li>
+        <li>
+          <img src="images/gallery/gallery2.png" alt="doctors with client">
+        </li>
+        <li>
+          <img src="images/gallery/gallery3.png" alt="doctor with client">
+        </li>
+        <li>
+          <img src="images/gallery/gallery4.png" alt="doctors with client">
+        </li>
+      </ul>
+    </section>
+
+    <section class="form">
+      <h3>ЗАПИСУЙСЯ НА ПРИЙОМ<br>ПРЯМО ЗАРАЗ</h3>
+      Адреса
+      ПІБ:
+      м. Рівне, вул. Волинська, 24
+      м. Рівне, вул. Волинської Дивізії, 1
+      НОМЕР ТЕЛЕФОНУ:
+      Телефон
+      +380
+      +38 098 60 08 834
+      Соціальні мережі
+      E-MAIL:
+      Savchyn_Dr
+      dr.savchyn
+      ВАШЕ ПОВІДОМЛЕННЯ:
+      Віталій Савчин
+      dr.savchyn
+      Графік роботи
+      1/100
+      Пн-Пт - 10:00-18:00
+      Сб - 10:00-16:00
+      Нд - вихідний
+      ЗАПИСАТИСЯ ОНЛАЙН
+      АКЦІЯ! ПРИ ЗАПИСУ ОНЛАЙН ЗНИЖКА НА ПРОФЕСІЙНУ ЧИСТКУ ЗУБІВ - 33%
+    </section>
+
     <section class="map"></section>
   </main>
-  
+
   <footer></footer>
 </body>
 
