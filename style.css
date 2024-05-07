@@ -1,3 +1,79 @@
+body {
+  padding: 0 calc((100vw - 16px - 1280px) / 2 - 9px);
+}
+
+header {
+  display: flex;
+}
+
+.logo>img {
+  width: 300px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+
+address {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+}
+
+.social {
+  display: flex;
+}
+
 .hero {
-  background-image: url('images/hero-bg.png');
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  height: 720px;
+  padding: 107px 0 48px 40px;
+  box-sizing: border-box;
+}
+
+.features {
+  text-align: center;
+}
+
+.features ul {
+  display: flex;
+  justify-content: center;
+}
+
+.disc {
+  width: 205px;
+  height: 205px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disc img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about .content {
+  display: flex;
+}
+
+.about img {
+  width: 500px;
+  height: 280px;
 }

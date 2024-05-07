@@ -82,23 +82,33 @@
 
       <ul>
         <li>
-          <img src="icons/personnel.png" alt="people">
+          <div class="disc">
+            <img src="icons/personnel.png" alt="people">
+          </div>
           <h4>Кваліфіковані спеціалісти</h4>
         </li>
         <li>
-          <img src="icons/features.png" alt="feature">
+          <div class="disc">
+            <img src="icons/features.png" alt="feature">
+          </div>
           <h4>Широкий спектр послуг</h4>
         </li>
         <li>
-          <img src="icons/progress.png" alt="progress chart">
+          <div class="disc">
+            <img src="icons/progress.png" alt="progress chart">
+          </div>
           <h4>Сучасні технології</h4>
         </li>
         <li>
-          <img src="icons/promo.png" alt="promotion">
+          <div class="disc">
+            <img src="icons/promo.png" alt="promotion">
+          </div>
           <h4>Акції та знижки</h4>
         </li>
         <li>
-          <img src="icons/place-pin.png" alt="map pin">
+          <div class="disc">
+            <img src="icons/place-pin.png" alt="map pin">
+          </div>
           <h4>Зручне розташування</h4>
         </li>
       </ul>
@@ -214,35 +224,143 @@
     </section>
 
     <section class="form">
-      <h3>ЗАПИСУЙСЯ НА ПРИЙОМ<br>ПРЯМО ЗАРАЗ</h3>
-      Адреса
-      ПІБ:
-      м. Рівне, вул. Волинська, 24
-      м. Рівне, вул. Волинської Дивізії, 1
-      НОМЕР ТЕЛЕФОНУ:
-      Телефон
-      +380
-      +38 098 60 08 834
-      Соціальні мережі
-      E-MAIL:
-      Savchyn_Dr
-      dr.savchyn
-      ВАШЕ ПОВІДОМЛЕННЯ:
-      Віталій Савчин
-      dr.savchyn
-      Графік роботи
-      1/100
-      Пн-Пт - 10:00-18:00
-      Сб - 10:00-16:00
-      Нд - вихідний
-      ЗАПИСАТИСЯ ОНЛАЙН
-      АКЦІЯ! ПРИ ЗАПИСУ ОНЛАЙН ЗНИЖКА НА ПРОФЕСІЙНУ ЧИСТКУ ЗУБІВ - 33%
+      <div class="content">
+        <form action="" class="column">
+          <h3>ЗАПИСУЙСЯ НА ПРИЙОМ<br>ПРЯМО ЗАРАЗ</h3>
+
+          <label for="form-name">ПІБ:</label>
+          <input type="text" id="form-name">
+
+          <label for="form-phone">НОМЕР ТЕЛЕФОНУ:</label>
+          <div class="phone-wrapper">
+            <span class="prefix">+380</span>
+            <input type="text" id="form-phone">
+          </div>
+
+          <label for="form-email">E-MAIL:</label>
+          <input type="text" id="form-email">
+
+          <label for="form-msg">ВАШЕ ПОВІДОМЛЕННЯ:</label>
+          <textarea type="text" id="form-msg">
+          </textarea>
+          <output>1/100</output>
+
+          <button>ЗАПИСАТИСЯ ОНЛАЙН</button>
+        </form>
+
+        <aside class="column">
+          <h4>Адреса</h4>
+          <ul>
+            <li>м. Рівне, вул. Волинська, 24</li>
+            <li>м. Рівне, вул. Волинської Дивізії, 1</li>
+          </ul>
+
+          <h4>Телефон</h4>
+          <a href="tel:+380986008834">+38 098 60 08 834</a>
+
+          <h4>Соціальні мережі</h4>
+          <ul>
+            <li>
+              <a href="">
+                <img src="icons/fb.svg" alt="facebook logo">
+                <span>Savchyn_Dr</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="icons/instagram.svg" alt="instagram logo">
+                <span>dr.savchyn</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="icons/tg.svg" alt="telegram logo">
+                <span>Віталій Савчин</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="icons/tik-tok.svg" alt="tik-tok logo">
+                <span>dr.savchyn</span>
+              </a>
+            </li>
+          </ul>
+
+          <h4>Графік роботи</h4>
+          <ul>
+            <li>Пн-Пт - 10:00-18:00</li>
+            <li>Сб - 10:00-16:00</li>
+            <li>Нд - вихідний</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="hint">АКЦІЯ! ПРИ ЗАПИСУ ОНЛАЙН ЗНИЖКА НА ПРОФЕСІЙНУ ЧИСТКУ ЗУБІВ - 33%</div>
     </section>
 
-    <section class="map"></section>
+    <section class="map">
+      <img src="images/map.png" alt="map screenshot">
+    </section>
   </main>
 
-  <footer></footer>
+  <footer>
+    <div class="logo">
+      <img src="images/logo.png" alt="tooth logo">
+    </div>
+
+    <div class="footer-social">
+      <ul class="social">
+        <li>
+          <a href="">
+            <img src="icons/fb.svg" alt="facebook logo">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="icons/instagram.svg" alt="instagram logo">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="icons/tg.svg" alt="telegram logo">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="icons/tik-tok.svg" alt="tik-tok logo">
+          </a>
+        </li>
+      </ul>
+
+      <h5>Наші соціальні мережі</h5>
+    </div>
+
+    <div class="contact">
+      <a href="tel:+380986008834"></a>
+      <img src="icons/phone.svg" alt="mobile icon">
+
+      <div>
+        <h4>+38 098 60 08 834</h4>
+        <p>Зателефонуйте нам</p>
+      </div>
+      </a>
+    </div>
+
+    <h4>Графік роботи</h4>
+    <ul>
+      <li>Пн-Пт - 10:00-18:00</li>
+      <li>Сб - 10:00-16:00</li>
+      <li>Нд - вихідний</li>
+    </ul>
+
+    <address>
+      <img src="icons/addresses.svg" alt="map pin">
+      <ul>
+        <li>м. Рівне, вул. Волинська, 24</li>
+        <li>м. Рівне, вул. Волинської Дивізії, 1</li>
+      </ul>
+    </address>
+  </footer>
 </body>
 
 </html>
