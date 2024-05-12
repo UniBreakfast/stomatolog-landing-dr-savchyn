@@ -389,11 +389,27 @@ main {
   border-radius: 10px;
   box-sizing: border-box;
   background: none;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.form .prefix {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.phone-wrapper {
+  display: flex;
+  gap: 10px;
 }
 
 .phone-wrapper input {
   border: none;
   background: none;
+  flex-grow: 1;
+  outline: none;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .form textarea {
@@ -405,6 +421,8 @@ main {
   box-sizing: border-box;
   background: none;
   resize: none;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .form button {
@@ -427,9 +445,34 @@ main {
   translate: 529px -20px;
 }
 
+.form aside {
+  padding-top: 93px;
+}
+
+.form aside, form h4 {
+  font-size: 20px;
+}
+
+.form :not(h4) {
+  font-weight: 400;
+}
+
+.form .social {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form .social a {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+
 .form .hint {
   text-align: center;
   font-family: Inter, Arial, sans-serif;
+  color: var(--secondary-color);
 }
 
 .map img {
@@ -442,5 +485,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   text-align: center;
+  height: 185px;
+}
+
+footer :is(h4, h5, p) {
+  margin: 0;
 }
