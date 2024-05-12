@@ -6,8 +6,12 @@
 
 body {
   padding: 0 calc((100vw - 16px - 1280px) / 2 - 9px);
+}
+
+body, button, input, textarea {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;
+  font-size: 16px;
 }
 
 header {
@@ -103,7 +107,6 @@ main {
 .hero button {
   color: var(--secondary-color);
   font-size: 20px;
-  font-weight: 600;
   cursor: pointer;
   border-radius: 12px;
   border: 4px solid var(--secondary-color);
@@ -294,8 +297,25 @@ main {
   object-position: -132px;
 }
 
+.specialists button {
+  background-color: #E1E1E1;
+  border: 2px solid #F4F4F48F;
+  width: 208px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 12px 0;
+  margin-top: 42px;
+}
+
 .gallery {
   text-align: center;
+  padding: 40px 0;
+}
+
+.gallery h2 {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 52px;
 }
 
 .gallery ul {
@@ -321,15 +341,90 @@ main {
   object-position: 0 -220px;
 }
 
+.gallery .dots {
+  margin-top: 52px;
+  gap: 40px;
+}
+
+.gallery .dots li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+
+.gallery .dots li.active {
+  background-color: var(--secondary-color);
+}
+
 .form .content {
   display: flex;
   justify-content: center;
   gap: 87px;
+  padding: 52px 83px;
 }
 
 .form form {
   display: flex;
   flex-direction: column;
+}
+
+.form h3 {
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+}
+
+.form label {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 36px 0 12px;
+}
+
+.form form>input, .form .phone-wrapper {
+  width: 588px;
+  height: 44px;
+  padding: 7px 18px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: none;
+}
+
+.phone-wrapper input {
+  border: none;
+  background: none;
+}
+
+.form textarea {
+  width: 588px;
+  height: 162px;
+  padding: 7px 18px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+}
+
+.form button {
+  width: 290px;
+  height: 48px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.form output {
+  line-height: 0;
+  font-size: 12px;
+  font-weight: 200;
+  translate: 529px -20px;
 }
 
 .form .hint {
