@@ -412,6 +412,10 @@ main {
   font-weight: 400;
 }
 
+.form {
+  background-image: url("images/form-bg.png");
+}
+
 .form textarea {
   width: 588px;
   height: 162px;
@@ -473,6 +477,7 @@ main {
   text-align: center;
   font-family: Inter, Arial, sans-serif;
   color: var(--secondary-color);
+  background-image: url("images/hint-bg.svg");
 }
 
 .map img {
