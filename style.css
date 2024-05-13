@@ -325,6 +325,10 @@ main {
   gap: 36px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .gallery img {
   border-radius: 20px;
   width: 543px;
@@ -333,11 +337,11 @@ main {
   object-position: center;
 }
 
-.gallery :nth-child(2)>img {
+.gallery :first-child:nth-child(2)>img {
   object-position: 0 -180px;
 }
 
-.gallery :nth-child(3)>img {
+.gallery :first-child:nth-child(3)>img {
   object-position: 0 -220px;
 }
 
@@ -351,6 +355,7 @@ main {
   height: 15px;
   border-radius: 50%;
   background-color: #D9D9D9;
+  cursor: pointer;
 }
 
 .gallery .dots li.active {
