@@ -44,4 +44,14 @@ function cloneFormToModal() {
 }
 
 function openModalForm() {
+  const glass = document.querySelector('.glass');
+
+  glass.hidden = false;
+  glass.onclick = closeModalForm;
+}
+
+function closeModalForm(e) {
+  if (e.target !== e.currentTarget) return;
+
+  e.currentTarget.hidden = true;
 }
