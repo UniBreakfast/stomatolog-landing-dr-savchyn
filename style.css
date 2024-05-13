@@ -362,6 +362,10 @@ main {
   background-color: var(--secondary-color);
 }
 
+.form {
+  background-image: url("images/form-bg.png");
+}
+
 .form .content {
   display: flex;
   justify-content: center;
@@ -369,24 +373,24 @@ main {
   padding: 52px 83px;
 }
 
-.form form {
+form {
   display: flex;
   flex-direction: column;
 }
 
-.form h3 {
+form h3 {
   font-size: 36px;
   margin: 0;
   text-align: center;
 }
 
-.form label {
+form label {
   font-size: 20px;
   font-weight: 200;
   margin: 36px 0 12px;
 }
 
-.form form>input, .form .phone-wrapper {
+form>input, form .phone-wrapper {
   width: 588px;
   height: 44px;
   padding: 7px 18px;
@@ -398,7 +402,7 @@ main {
   font-weight: 400;
 }
 
-.form .prefix {
+form .prefix {
   font-size: 24px;
   font-weight: 200;
 }
@@ -417,11 +421,7 @@ main {
   font-weight: 400;
 }
 
-.form {
-  background-image: url("images/form-bg.png");
-}
-
-.form textarea {
+form textarea {
   width: 588px;
   height: 162px;
   padding: 7px 18px;
@@ -434,7 +434,7 @@ main {
   font-weight: 400;
 }
 
-.form button {
+form button {
   width: 290px;
   height: 48px;
   background-color: var(--secondary-color);
@@ -447,7 +447,7 @@ main {
   margin-top: 40px;
 }
 
-.form output {
+form output {
   line-height: 0;
   font-size: 12px;
   font-weight: 200;
@@ -478,7 +478,7 @@ main {
   align-items: center;
 }
 
-.form .hint {
+.hint {
   text-align: center;
   font-family: Inter, Arial, sans-serif;
   color: var(--secondary-color);
@@ -529,4 +529,31 @@ footer {
 
 footer :is(h4, h5, p) {
   margin: 0;
+}
+
+.glass {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  width: 724px;
+  height: 910px;
+  margin: auto;
+  position: relative;
+}
+
+.modal form {
+  padding: 80px 68px;
+}
+
+.modal .hint {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

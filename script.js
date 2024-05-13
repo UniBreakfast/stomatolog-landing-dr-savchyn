@@ -1,4 +1,9 @@
+const stickyBtn = document.querySelector('.sticky-bar button');
+
 enableCarousel('.carousel', 5000);
+cloneFormToModal();
+
+stickyBtn.onclick = openModalForm;
 
 function enableCarousel(selector, interval) {
   const carousel = document.querySelector(selector);
@@ -28,4 +33,15 @@ function enableCarousel(selector, interval) {
     activeDot.classList.remove('active');
     selectedDot.classList.add('active');
   }
+}
+
+function cloneFormToModal() {
+  const modal = document.querySelector('.modal');
+  const form = document.querySelector('.form form');
+  const hint = document.querySelector('.form .hint');
+  
+  modal.append(form.cloneNode(true), hint.cloneNode(true));
+}
+
+function openModalForm() {
 }
