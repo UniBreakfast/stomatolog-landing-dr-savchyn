@@ -39,8 +39,20 @@ function cloneFormToModal() {
   const modal = document.querySelector('.modal');
   const form = document.querySelector('.form form');
   const hint = document.querySelector('.form .hint');
+  const formClone = form.cloneNode(true);
+  const hintClone = hint.cloneNode(true);
+  const linkedElements = formClone.querySelectorAll('[for], [id]');
+
+  for (const el of linkedElements) {
+    if (el.hasAttribute('for')) {
+      el.setAttribute('for', 'modal-' + el.getAttribute('for'));
+    }
+    if (el.hasAttribute('id')) {
+      el.setAttribute('id', 'modal-' + el.getAttribute('id'));
+    }
+  }
   
-  modal.append(form.cloneNode(true), hint.cloneNode(true));
+  modal.append(formClone, hintClone);
 }
 
 function openModalForm() {
