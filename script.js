@@ -2,24 +2,30 @@ enableCarousel('.carousel', 5000);
 
 function enableCarousel(selector, interval) {
   const carousel = document.querySelector(selector);
-  const [slideContainer, dots] = carousel.children;
+  const [slideContainer, dotBar] = carousel.children;
   
-  carousel.onclick = handleDotClick;
+  dotBar.onclick = handleDotClick;
 
   function handleDotClick(e) {
     const dot = e.target.closest('.dots>li');
 
     if (!dot) return;
 
-    const activeDot = carousel.querySelector('.active');
+    const i = Array.from(dotBar.children).indexOf(dot);
+
+    switchToSlide(i);
+  }
+
+  function switchToSlide(i) {
+    const activeDot = dotBar.querySelector('.active');
     const activeSlide = slideContainer.querySelector('.slide:not([hidden])');
-    const i = Array.from(dots.children).indexOf(dot);
+    const selectedDot = dotBar.children[i];
     const selectedSlide = slideContainer.children[i];
-    
+
     activeSlide.hidden = true;
     selectedSlide.hidden = false;
 
     activeDot.classList.remove('active');
-    dot.classList.add('active');
+    selectedDot.classList.add('active');
   }
 }
