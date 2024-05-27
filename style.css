@@ -485,6 +485,21 @@ form output {
   background-image: url("images/hint-bg.svg");
 }
 
+.map {
+  display: flex;
+  gap: 4px;
+}
+
+.map figure {
+  margin: 0;
+}
+
+.map figcaption {
+  text-align: center;
+  text-shadow: 0 0 1px yellow;
+  font-weight: bold;
+}
+
 .map img {
   width: 100%;
   height: 765px;
